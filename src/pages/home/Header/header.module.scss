@@ -1,0 +1,18 @@
+.header{
+    .div_header{
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        width: 1400px;
+        max-width: calc(100% - 30px);
+        margin: 0 auto;
+        .div_logo{
+            >img{
+                width: 120px;
+            }
+        }
+    }
+   
+}
