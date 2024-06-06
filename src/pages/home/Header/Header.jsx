@@ -1,7 +1,8 @@
 import css from './header.module.scss'
 import logo from '../../../assets/pokemon.png'
+import  * as FaIcons from "react-icons/fa";
 
-export default function Header() {
+export default function Header({obtenerSearch}) {
   return (
     <nav className={css.header}>
     <div className={css.div_header}>
@@ -10,7 +11,11 @@ export default function Header() {
         />
     </div>
     <div className={css.div_search}>
-        <input type="text" placeholder="Search"/>
+      <div>
+        <FaIcons.FaSearch />
+      </div>
+        <input type="text" 
+        onChange={(e) => obtenerSearch(e.target.value)}/>
     </div>
     </div>
 
